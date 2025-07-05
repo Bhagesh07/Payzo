@@ -1,0 +1,24 @@
+{
+    "name": "@repo/db",
+    "version": "0.0.0",
+    "dependencies": {
+        "@prisma/client": "^5.11.0",
+        "bcrypt": "^5.1.1"
+    },
+    "devDependencies": {
+        "prisma": "5.11.0",
+        "ts-node": "^10.9.2"
+    },
+    "scripts": {
+        "postinstall": "prisma generate",
+        "build": "tsc -b",
+        "dev": "tsc --watch",
+    "seed": "prisma db seed"
+    },
+    "exports": {
+        "./client": "./client.ts"
+    },
+    "prisma": {
+        "seed": "ts-node prisma/seed.ts"
+    }
+}
