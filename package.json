@@ -2,13 +2,13 @@
   "name": "payzo",
   "private": true,
   "scripts": {
-    "build": "turbo build",
-    "dev": "turbo dev",
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
     "dev:all": "turbo run dev --parallel",
-    "lint": "turbo lint",
+    "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "db:generate": "cd packages/db && npx prisma generate && cd ../..",
-    "start": "turbo run start"
+    "start": "node apps/web/.next/standalone/server.js"
   },
   "devDependencies": {
     "@repo/eslint-config": "*",
