@@ -26,15 +26,25 @@
       "static/chunks/main-app.js",
       "static/chunks/app/login0/page.js"
     ],
-    "/(dashboard)/p2p/page": [
+    "/(dashboard)/transfer/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(dashboard)/p2p/page.js"
+      "static/chunks/app/(dashboard)/transfer/page.js"
     ],
     "/(dashboard)/transactions/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/(dashboard)/transactions/page.js"
+    ],
+    "/(dashboard)/p2p/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(dashboard)/p2p/page.js"
+    ],
+    "/_not-found/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/_not-found/page.js"
     ]
   }
 }
